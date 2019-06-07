@@ -6,6 +6,12 @@
 - Jest & Enzyme
 - Development server provided by `create-react-app` running on node 10.15.1
 
+### Why I used TypeScript
+Some people see the inclusion or use of TS as unnecessary. I use typescript in most projects I work with for the following reasons:
+- Strongly typed code is less error prone, for me this reduces mental overhead when coding.
+- In React, the ability to apply readonly and DeepReadOnly types to state (especially with redux stores) has a huge benefit ensuring that state is never mutated accidentally.
+- When using TS correctly and ensuring type inference is the standard typing method the code is extremely expressive, especially so in IDE's that compile TS.
+
 ### Known issues
 - Length of characters allowed is not restricted and longer values break the UI.
 - I have tested most functionality but not to the depth I would usually like.

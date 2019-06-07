@@ -10,9 +10,9 @@ import { Row } from './styled/Row';
 import { Screen } from './styled/Screen';
 
 export type AppState = {
-    value: string;
-    operator: Operator | null;
-    previousValue: string | null;
+    readonly value: string;
+    readonly operator: Operator | null;
+    readonly previousValue: string | null;
 };
 
 const initialState: AppState = {
