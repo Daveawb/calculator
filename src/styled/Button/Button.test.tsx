@@ -5,7 +5,7 @@ import { Button } from './Button';
 describe('<Button /> styled component', () => {
     test('matches snapshot', () => {
         const fn = (event: React.MouseEvent) => undefined;
-        const wrapper = shallow(<Button fn={fn} />);
+        const wrapper = shallow(<Button value="test" fn={fn} />);
         expect(wrapper).toMatchSnapshot();
     });
 });
