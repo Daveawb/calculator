@@ -1,8 +1,9 @@
-## Calculator
+## Calculator - A simple calculator
 
-A simple calculator written in
+### Coded using
 - React 16
 - Typescript 3.5.1
+- Jest & Enzyme
 - Development server provided by `create-react-app` running on node 10.15.1
 
 ### Known issues
@@ -13,9 +14,19 @@ A simple calculator written in
     - Acceptance tests are simple
     
 ### If I had longer I would...
-- Limit length to 9 characters
+- Limit screen length to 9 characters
+- Add further functionality (Square roots, powers etc.)
 - Expand tests to include some more complex calculations
 - Expand on the logic to use a functional composition model to build up a calculation.
+
+### Project structure
+All project related files are in the `./src` directory. The project structure is simple with the `App` component containing the high level logic and composes the calculator view.
+
+#### Styled components
+- Button - All calculator buttons use this
+- Layout - The calculator layout
+- Row - A row of buttons
+- Screen - The calculator screen
 
 ## Available Scripts
 

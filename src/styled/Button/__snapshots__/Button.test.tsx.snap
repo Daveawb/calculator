@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> styled component matches snapshot 1`] = `
+<StyledComponent
+  fn={[Function]}
+  forwardedComponent={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bdVaJa",
+        "isStatic": false,
+        "rules": Array [
+          "
+    display: flex;
+    justify-content: center;
+    min-width: 90px;
+    min-height: 90px;
+    margin: 4px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.2);
+
+    ",
+          [Function],
+          "
+
+    ",
+          [Function],
+          "
+",
+        ],
+      },
+      "displayName": "Styled(RawButton)",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "self": [Circular],
+      "styledComponentId": "sc-bdVaJa",
+      "target": [Function],
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+  forwardedRef={null}
+/>
+`;
