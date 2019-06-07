@@ -1,5 +1,7 @@
 ## Calculator - A simple calculator
 
+version number: `627d7be039e0085025a51d47e42bdd970409ec1c`
+
 ### Coded using
 - React 16
 - Typescript 3.5.1
@@ -11,6 +13,11 @@ Some people see the inclusion or use of TS as unnecessary. I use typescript in m
 - Strongly typed code is less error prone, for me this reduces mental overhead when coding.
 - In React, the ability to apply readonly and DeepReadOnly types to state (especially with redux stores) has a huge benefit ensuring that state is never mutated accidentally.
 - When using TS correctly and ensuring type inference is the standard typing method the code is extremely expressive, especially so in IDE's that compile TS.
+
+### Test coverage
+- library: 100% coverage
+- styled: 100% coverage
+- App.tsx: 91% coverage
 
 ### Known issues
 - Length of characters allowed is not restricted and longer values break the UI.

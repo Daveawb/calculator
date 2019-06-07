@@ -26,6 +26,7 @@ function digitElements(wrapper: ReactWrapper) {
         decimal: '.',
         percentage: '%',
         reset: 'AC',
+        sign: '+ / -',
     };
 
     const output: { [k: string]: ReactWrapper } = {};
@@ -102,7 +103,23 @@ describe('<App />', () => {
         });
     });
 
-    describe('basic aritmetic', () => {
+    describe('reset', () => {
+        it('should reset the calculator', () => {
+            const wrapper = mount(<App />);
+            const screen = wrapper.find(Screen);
+
+            const { one, three, nine, reset } = digitElements(wrapper);
+
+            one.first().simulate('click');
+            three.first().simulate('click');
+            nine.first().simulate('click');
+            reset.first().simulate('click');
+
+            expect(screen.text()).toEqual('0');
+        });
+    });
+
+    describe('basic arithmetic', () => {
         it('sums two numbers', () => {
             const wrapper = mount(<App />);
             const screen = wrapper.find(Screen);
@@ -157,6 +174,56 @@ describe('<App />', () => {
             equals.first().simulate('click');
 
             expect(screen.text()).toEqual('16');
+        });
+    });
+
+    describe('using the signed function', () => {
+        it('it negates a value', () => {
+            const wrapper = mount(<App />);
+            const screen = wrapper.find(Screen);
+
+            const { two, sign } = digitElements(wrapper);
+
+            two.first().simulate('click');
+            sign.first().simulate('click');
+
+            expect(screen.text()).toEqual('-2');
+        });
+
+        it('negated values addition', () => {
+            const wrapper = mount(<App />);
+            const screen = wrapper.find(Screen);
+
+            const { two, sign, eight, add, equals } = digitElements(wrapper);
+
+            two.first().simulate('click');
+            sign.first().simulate('click');
+            add.first().simulate('click');
+            eight.first().simulate('click');
+            equals.first().simulate('click');
+
+            expect(screen.text()).toEqual('6');
+        });
+    });
+
+    describe('percentage calculations', () => {
+        it('subtracting a percentage', () => {
+            const wrapper = mount(<App />);
+            const screen = wrapper.find(Screen);
+
+            const { zero, one, two, eight, add, equals, percentage } = digitElements(wrapper);
+
+            two.first().simulate('click');
+            add.first().simulate('click');
+            eight.first().simulate('click');
+            equals.first().simulate('click');
+            add.first().simulate('click');
+            one.first().simulate('click');
+            zero.first().simulate('click');
+            percentage.first().simulate('click');
+
+
+            expect(screen.text()).toEqual('11');
         });
     });
 });

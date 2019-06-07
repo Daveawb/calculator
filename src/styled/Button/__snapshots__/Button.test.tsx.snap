@@ -46,5 +46,6 @@ exports[`<Button /> styled component matches snapshot 1`] = `
     }
   }
   forwardedRef={null}
+  value="test"
 />
 `;
