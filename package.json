@@ -2,15 +2,41 @@
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "David Barker",
+    "email": "david.aw.barker@gmail.com",
+    "url": "http://web-frame.dev"
+  },
   "dependencies": {
-    "@types/jest": "24.0.13",
-    "@types/node": "12.0.5",
-    "@types/react": "16.8.19",
-    "@types/react-dom": "16.8.4",
+    "ramda": "^0.26.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "styled-components": "^4.3.0",
     "typescript": "3.5.1"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "24.0.13",
+    "@types/node": "12.0.5",
+    "@types/ramda": "^0.26.9",
+    "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
+    "@types/styled-components": "^4.1.16",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest-environment-enzyme": "^7.0.2",
+    "jest-enzyme": "^7.0.2",
+    "jest-styled-components": "^6.3.1",
+    "prettier": "^1.17.1",
+    "storybook": "^1.0.0",
+    "storybook-react": "^3.2.16",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,16 +47,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
