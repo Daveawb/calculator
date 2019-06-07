@@ -44,6 +44,7 @@ Some people see the inclusion or use of TS as unnecessary. I use typescript in m
 - Add further functionality (Square roots, powers etc.)
 - Expand tests to include some more complex calculations
 - Expand on the logic to use a functional composition model to build up a calculation.
+- Allow for keyboard input / navigation rather than just mouse clicks.
 
 ### Project structure
 All project related files are in the `./src` directory. The project structure is simple with the `App` component containing the high level logic and composes the calculator view.
