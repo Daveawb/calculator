@@ -13,6 +13,7 @@ Some people see the inclusion or use of TS as unnecessary. I use typescript in m
 - Strongly typed code is less error prone, for me this reduces mental overhead when coding.
 - In React, the ability to apply readonly and DeepReadOnly types to state (especially with redux stores) has a huge benefit ensuring that state is never mutated accidentally.
 - When using TS correctly and ensuring type inference is the standard typing method the code is extremely expressive, especially so in IDE's that compile TS.
+- Last but not least, I am proficient with it and it does not add any time overhead to projects I use with it.
 
 ### Test coverage
 - library: 100% coverage
@@ -27,6 +28,7 @@ Some people see the inclusion or use of TS as unnecessary. I use typescript in m
     - Acceptance tests are simple
     
 ### If I had longer I would...
+- No clear screen on click of operator, the operator symbol would display instead, on input of another integer / value the screen would clear.
 - Limit screen length to 9 characters
 - Add further functionality (Square roots, powers etc.)
 - Expand tests to include some more complex calculations
