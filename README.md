@@ -2,6 +2,17 @@
 
 version number: `627d7be039e0085025a51d47e42bdd970409ec1c`
 
+### Installation
+`yarn` or `npm install`
+
+#### `npm start`
+
+Runs the app, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+#### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
+
 ### Coded using
 - React 16
 - Typescript 3.5.1
@@ -42,14 +53,4 @@ All project related files are in the `./src` directory. The project structure is
 - Layout - The calculator layout
 - Row - A row of buttons
 - Screen - The calculator screen
-
-## Available Scripts
-
-### `npm start`
-
-Runs the app, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
 
